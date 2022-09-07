@@ -1,0 +1,30 @@
+weight = 41.5
+
+# Ground shipping
+if weight > 10:
+  print("Based on your package weight, ground shipping will cost", (20 + (weight * 4.75)), "dollars.")
+elif weight > 6 and weight <= 10:
+  print("Based on your package weight, ground shipping will cost", (20 + (weight * 4.00)), "dollars.")
+elif weight > 2 and weight <= 6:
+  print("Based on your package weight, ground shipping will cost", (20 + (weight * 3.00)), "dollars.")
+elif weight <= 2:
+  print("Based on your package weight, ground shipping will cost", (20 + (weight * 1.50)), "dollars.")
+else:
+  print(Error)
+
+#Premium ground shipping
+premium_ground_shipping = 125
+
+print("Premium ground shipping will cost", premium_ground_shipping, "dollars.")
+
+# Drone shipping
+if weight > 10:
+  print("Based on your package weight, drone shipping will cost", (weight * 14.25), "dollars.")
+elif weight > 6 and weight <= 10:
+  print("Based on your package weight, drone shipping will cost", (weight * 12.00), "dollars.")
+elif weight > 2 and weight <= 6:
+  print("Based on your package weight, drone shipping will cost", (weight * 9.00), "dollars.")
+elif weight < 2:
+  print("Based on your package weight, drone shipping will cost", (weight * 4.50), "dollars.")
+else:
+  print(Error)

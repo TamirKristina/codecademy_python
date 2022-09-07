@@ -12,7 +12,7 @@ elif weight <= 2:
 else:
   print(Error)
 
-#Premium ground shipping
+# Premium ground shipping
 premium_ground_shipping = 125
 
 print("Premium ground shipping will cost", premium_ground_shipping, "dollars.")
